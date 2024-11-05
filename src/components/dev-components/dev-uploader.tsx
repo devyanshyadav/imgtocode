@@ -14,7 +14,7 @@ interface FileWithPreview extends File {
   preview?: string;
 }
 
-interface UploadedFile {
+export interface UploadedFile {
   file: FileWithPreview;
   progress: number;
   preview?: string;
@@ -28,6 +28,8 @@ interface FileDropzoneProps {
   maxFiles?: number;
   disabled?: boolean;
   showLimitError?: boolean;
+  uploadedFiles: UploadedFile[];
+  setUploadedFiles: React.Dispatch<React.SetStateAction<UploadedFile[]>>;
 }
 
 const DevFileUploader = ({
@@ -38,8 +40,9 @@ const DevFileUploader = ({
   maxFiles = 5,
   disabled = false,
   showLimitError = true,
+  uploadedFiles,
+  setUploadedFiles,
 }: FileDropzoneProps) => {
-  const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
   const [isDragActive, setIsDragActive] = useState(false);
   const [fileLimitExceeded, setFileLimitExceeded] = useState(false);
 

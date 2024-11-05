@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import DevLaserInput from "../dev-components/dev-laser-input";
 import DevButton from "../dev-components/dev-button";
 import useZustStore from "@/lib/zust-store";
@@ -7,11 +7,11 @@ import { TxtModal } from "@/lib/txt-modal";
 import { RiLoader4Line } from "react-icons/ri";
 
 const PromptInput = () => {
-  const { setCode, setLoading, File,isLoading } = useZustStore();
-  const ref = React.useRef<HTMLInputElement>(null);
-
+  const { setCode, setLoading, File, isLoading } = useZustStore();
+  const [userPrompt, setUserPrompt] = useState("");
   const handlePrompt = async () => {
-    const Prompt = `user-prompt:${ref.current?.value}.  
+    if (!userPrompt.trim()) return;
+    const Prompt = `user-prompt:${userPrompt}.  
     -You are an expert UI developer specializing in React and Tailwind CSS. Your task is to transform the provided requirements into precise, production-ready JSX code.
 
 **Requirements:**
@@ -56,22 +56,26 @@ Provide pixel-perfect, production-ready JSX code with Tailwind CSS styling that 
 **Output**:
 Generate only the final working JSX code—no comments, explanations, or additional documentation.
 `;
-setLoading(true);
+    setLoading(true);
     const result = await TxtModal(Prompt);
     setCode(result as string);
     setLoading(false);
+    setUserPrompt("")
   };
   return (
     <DevLaserInput
+     placeholder="Create a dashboard component"
       scale="lg"
+      value={userPrompt}
       disabled={File ? true : false}
       type="text"
-      ref={ref}
+      onChange={(e) => setUserPrompt(e.target.value)}
       className="pr-1 pl-4"
       reverseIcon
       icon={
-        <DevButton  onClick={handlePrompt} rounded="full" ripple>
-          Do Magic{isLoading && <RiLoader4Line className="animate-spin text-xl"/>}
+        <DevButton onClick={handlePrompt} rounded="full">
+          Do Magic
+          {userPrompt && isLoading && <RiLoader4Line className="animate-spin text-xl" />}
         </DevButton>
       }
     />

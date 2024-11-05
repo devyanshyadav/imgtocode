@@ -10,6 +10,7 @@ export default function CodePlayground() {
   return (
     <div className="relative">
       <Sandpack
+      theme={"dark"}
       template="react"
       options={{
         externalResources: ["https://cdn.tailwindcss.com"],

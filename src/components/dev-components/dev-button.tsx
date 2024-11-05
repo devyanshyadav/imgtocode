@@ -11,7 +11,6 @@ type ButtonProps = {
   size?: "sm" | "md" | "lg";
   href?: string;
   rounded?: "sm" | "md" | "lg" | "full" | "none";
-  ripple?: boolean;
   asIcon?: boolean;
   children: React.ReactNode;
   className?: string;
@@ -28,7 +27,6 @@ const DevButton = React.forwardRef<
       size = "md",
       href,
       rounded = "md",
-      ripple = false,
       asIcon = false,
       children,
       className,

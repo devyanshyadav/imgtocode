@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProviders } from "@/components/global-cmps/theme-providers";
 import Header from "@/components/global-cmps/header";
-import Footer from "@/components/global-cmps/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +34,6 @@ export default function RootLayout({
           <Header/>
           <main className="max-w-7xl mx-auto flex-grow [&::-webkit-scrollbar]:hidden overflow-auto overflow-x-hidden w-full px-3 md:px-2 ">
             {children}
-          {/* <Footer/> */}
           </main>
         </ThemeProviders>
       </body>

@@ -39,7 +39,7 @@ const GoBack = () => {
     animateReverse()
    }
       return (
-   (code) ? <DevButton onClick={handleClear}>Back</DevButton> : null
+   (code) ? <DevButton rounded='full' onClick={handleClear}>Back</DevButton> : null
   )
 }
 
