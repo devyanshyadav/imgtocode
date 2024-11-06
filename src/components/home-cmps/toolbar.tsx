@@ -14,7 +14,7 @@ import DevClipboard from "../dev-components/dev-clipboard";
 import { LuCopy } from "react-icons/lu";
 
 const Toolbar = () => {
-  const { File, code, setCode, setLoading } = useZustStore();
+  const { File, code, setCode, setLoading,userInputPrompt } = useZustStore();
   const [update, setUpdate] = useState("");
 
   const handleFixCode = async () => {
@@ -40,7 +40,7 @@ const Toolbar = () => {
 
     const result = File
       ? await ImageTxtModal(File as File, UploadPrompt)
-      : await TxtModal(UploadPrompt);
+      : await TxtModal(userInputPrompt);
     setCode(result as string);
     setLoading(false);
   };

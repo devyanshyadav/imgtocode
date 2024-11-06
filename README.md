@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Image to Code Transformer
 
-## Getting Started
+Transform UI designs into production-ready code instantly. Simply upload an image, and watch as AI converts it into clean, customizable JSX code.
 
-First, run the development server:
+![UI to Code Transformer Banner](/assets/readme-banner.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🎯 Core Capabilities
+- **Instant Code Generation**: Upload any UI design image and get JSX code in seconds
+- **Smart Error Handling**: Built-in error detection with one-click fixes
+- **Code Regeneration**: Easily regenerate code if needed
+- **Custom Prompts**: Fine-tune the output with custom instructions
+- **Interactive Editor**: Powered by Sandpack for real-time code editing
+- **Code Customization**: Add functionality and modify existing code seamlessly
+- **One-Click Copy**: Copy generated code with a single click
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🛠️ Technical Stack
+- Next.js 15 for robust performance
+- Google Gemini Vision & Text Models for AI processing
+- Custom in-house prompts for optimized results
+- Sandpack for interactive code editing
+- Modern drag-and-drop interface
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Visit the Website**
+   - Navigate to our platform
+   - No sign-up required
 
-To learn more about Next.js, take a look at the following resources:
+2. **Upload Your Design**
+   ```
+   - Drag and drop your image into the upload zone
+   - Or click to select from your files
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Get Your Code**
+   - Wait a few seconds for the AI to process
+   - Review the generated JSX code
+   - Copy or customize as needed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Usage Examples
 
-## Deploy on Vercel
+### Basic Image to Code
+1. Upload your UI design image
+2. Wait for the AI processing
+3. Get production-ready JSX code
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Error Fixing
+If you encounter any issues:
+1. Click the "Fix Error" button
+2. Review the suggested fixes
+3. Apply the corrections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Code Customization
+To add functionality:
+1. Use the interactive editor
+2. Write your custom code
+3. See real-time results
+
+### Using Custom Prompts
+1. Click on custom prompt option
+2. Enter your specific requirements
+3. Generate tailored code
+
+## ⚙️ Advanced Features
+
+### Error Resolution
+- Automatic error detection
+- One-click fix suggestions
+- Smart code regeneration
+
+### Code Customization
+- Add event handlers
+- Implement state management
+- Include custom logic
+- Style modifications
+
+### Custom Prompts
+- Specify component structure
+- Define styling preferences
+- Add specific functionality
+- Control output format
+
+## 🎯 Best Practices
+
+1. **Image Quality**
+   - Use clear, high-resolution images
+   - Ensure good contrast
+   - Avoid overlapping elements
+
+2. **Custom Prompts**
+   - Be specific in your requirements
+   - Include desired functionality
+   - Specify any style preferences
+
+3. **Code Customization**
+   - Test changes in real-time
+   - Use the built-in error checker
+   - Save iterations as needed
+
+## 🛠️ Technical Details
+
+- Built with Next.js 15
+- Powered by Google Gemini AI
+- Interactive code editing via Sandpack
+- Custom prompt engineering
+- Optimized image processing
+- Real-time code generation
+
+## 🤝 Contributing
+
+We welcome contributions! If you have suggestions or find bugs:
+1. Open an issue
+2. Describe the problem/suggestion
+3. Submit a pull request if applicable
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🌟 Star us on GitHub!
+
+If you find this tool useful, please consider giving us a star. It helps others discover the project!

@@ -24,7 +24,7 @@ Analysis Requirements:
    - Spacing between components
    - Container relationships
    - Responsive behavior points
-   - For elements with full border radius (rounded-full), implement square aspect ratio
+   - For elements with full border radius (rounded-full), implement square aspect ratio (i.e aspect-square)
    - Add flex-shrink-0 to elements inside flex containers to prevent shrinking
    - Use flex-wrap on containers with multiple small elements (chips/cards) to prevent overflow
 
@@ -127,7 +127,7 @@ Analysis Requirements:
    - Spacing between components
    - Container relationships
    - Responsive behavior points
-   - For elements with full border radius (rounded-full), implement square aspect ratio
+   - For elements with full border radius (rounded-full), implement square aspect ratio (i.e aspect-square)
    - Add flex-shrink-0 to elements inside flex containers to prevent shrinking
    - Use flex-wrap on containers with multiple small elements (chips/cards) to prevent overflow
    - Add flex-nowrap on small containers with icon beside the text

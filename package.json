@@ -2,6 +2,10 @@
   "name": "imgtocode",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Devyansh"
+  },
+  "description": "AI Image to Code Transformer",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

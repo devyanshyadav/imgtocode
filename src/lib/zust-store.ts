@@ -10,12 +10,15 @@ interface ZustState {
   setError: (error: string) => void;
   reset: () => void;
   code: string,
-  setCode: (code: string) => void
+  setCode: (code: string) => void,
+  userInputPrompt: string,
+  setUserInputPrompt: (prompt: string) => void
 }
 
 const useZustStore = create<ZustState>()((set) => ({
   File: undefined,
-  prompt: "",
+  userInputPrompt: "",
+  setUserInputPrompt: (prompt) => set({ userInputPrompt: prompt }),
   code: "",
   setCode: (code) => set({ code }),
   isLoading: false,
@@ -27,7 +30,8 @@ const useZustStore = create<ZustState>()((set) => ({
     File: undefined, 
     isLoading: false, 
     error: undefined ,
-    code: ""
+    code: "",
+    userInputPrompt: ""
   })
 }));
 

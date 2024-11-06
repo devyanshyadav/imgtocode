@@ -10,7 +10,6 @@ export default function ThemeSwitch() {
       <DevButton
         rounded="full"
         asIcon
-        size="lg"
         onClick={() => {
           setTheme(theme === "light" ? "dark" : "light");
         }}

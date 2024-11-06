@@ -8,7 +8,7 @@ import { RiLoader4Line } from "react-icons/ri";
 import { InputPrompt } from "@/lib/prompts";
 
 const PromptInput = () => {
-  const { setCode, setLoading, File, isLoading } = useZustStore();
+  const { setCode, setLoading, File, isLoading,setUserInputPrompt } = useZustStore();
   const [userPrompt, setUserPrompt] = useState("");
   const handlePrompt = async () => {
     if (!userPrompt.trim()) return;
@@ -16,6 +16,7 @@ const PromptInput = () => {
     setLoading(true);
     const result = await TxtModal(Prompt);
     setCode(result as string);
+    setUserInputPrompt( userPrompt );
     setLoading(false);
     setUserPrompt("")
   };
