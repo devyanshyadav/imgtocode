@@ -68,6 +68,7 @@ Development Guidelines:
    - Prevent content overflow in flex containers
    - Maintain consistent spacing between wrapped elements 
    - Do flex-nowrap on containers with icon beside the text
+   - Do flex-wrap on containers with multiple elements in a row to prevent overflow
 
 4. Asset Handling:
    - For icons: Use only verified Lucide React icons
@@ -162,6 +163,8 @@ Development Guidelines:
    - Prevent content overflow in flex containers
    - Maintain consistent spacing between wrapped elements 
    - Do flex-nowrap on containers with icon beside the text
+   - Do flex-wrap on containers with multiple elements in a row to prevent overflow
+
 
 4. Asset Handling:
    - For icons: Use only verified Lucide React icons
