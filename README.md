@@ -21,6 +21,7 @@ Transform UI designs into production-ready code instantly. Simply upload an imag
 - Custom in-house prompts for optimized results
 - Sandpack for interactive code editing
 - Modern drag-and-drop interface
+- Inhouse React components [Visit Dev Components](https://dev-components.vercel.app/)
 
 ## 🚀 Getting Started
 
