@@ -1,7 +1,7 @@
 "use client";
 import useZustStore from "@/lib/zust-store";
 import { Sandpack } from "@codesandbox/sandpack-react";
-import UpdatePrompt from "../home-cmps/update-prompt";
+import Toolbar from "../home-cmps/toolbar";
 
 
 export default function CodePlayground() {
@@ -28,7 +28,7 @@ export default function CodePlayground() {
         "/App.js": code.replace(/^```.+?\n|```$/gm, ''),
       }}
     />
-   <UpdatePrompt/>
+   <Toolbar/>
     </div>
   );
 }

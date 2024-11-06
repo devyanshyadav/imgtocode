@@ -4,6 +4,7 @@ import DevButton from '../dev-components/dev-button'
 import useZustStore from '@/lib/zust-store'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { IoArrowBackOutline } from 'react-icons/io5'
 
 const GoBack = () => {
    const {reset , code}=useZustStore()
@@ -39,7 +40,7 @@ const GoBack = () => {
     animateReverse()
    }
       return (
-   (code) ? <DevButton rounded='full' onClick={handleClear}>Back</DevButton> : null
+   (code) ? <DevButton rounded='full' onClick={handleClear}><IoArrowBackOutline/> Back</DevButton> : null
   )
 }
 

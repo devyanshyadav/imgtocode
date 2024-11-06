@@ -3,7 +3,7 @@ import DevButton from "@/components/dev-components/dev-button";
 import DevInput from "@/components/dev-components/dev-input";
 import DevLaserInput from "@/components/dev-components/dev-laser-input";
 import PromptInput from "@/components/home-cmps/prompt-input";
-import UpdatePrompt from "@/components/home-cmps/update-prompt";
+import UpdatePrompt from "@/components/home-cmps/toolbar";
 import UploadImg from "@/components/home-cmps/upload-img";
 import OutputPlayground from "@/components/output-cmps/output-playground";
 import useZustStore from "@/lib/zust-store";
