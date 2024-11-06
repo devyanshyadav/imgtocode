@@ -1,8 +1,8 @@
-# 🎨 Image to Code Transformer
+# 🤖 Image to Code Transformer
 
 Transform UI designs into production-ready code instantly. Simply upload an image, and watch as AI converts it into clean, customizable JSX code.
 
-![UI to Code Transformer Banner](/assets/readme-banner.png)
+![UI to Code Transformer Banner](/public/assets/readme-banner.png)
 
 ## ✨ Features
 
@@ -55,7 +55,7 @@ If you encounter any issues:
 ### Code Customization
 To add functionality:
 1. Use the interactive editor
-2. Write your custom code
+2. Write your changes as needed
 3. See real-time results
 
 ### Using Custom Prompts
@@ -76,28 +76,11 @@ To add functionality:
 - Include custom logic
 - Style modifications
 
-### Custom Prompts
+### Support Custom Prompts
 - Specify component structure
 - Define styling preferences
 - Add specific functionality
 - Control output format
-
-## 🎯 Best Practices
-
-1. **Image Quality**
-   - Use clear, high-resolution images
-   - Ensure good contrast
-   - Avoid overlapping elements
-
-2. **Custom Prompts**
-   - Be specific in your requirements
-   - Include desired functionality
-   - Specify any style preferences
-
-3. **Code Customization**
-   - Test changes in real-time
-   - Use the built-in error checker
-   - Save iterations as needed
 
 ## 🛠️ Technical Details
 
@@ -107,17 +90,6 @@ To add functionality:
 - Custom prompt engineering
 - Optimized image processing
 - Real-time code generation
-
-## 🤝 Contributing
-
-We welcome contributions! If you have suggestions or find bugs:
-1. Open an issue
-2. Describe the problem/suggestion
-3. Submit a pull request if applicable
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
